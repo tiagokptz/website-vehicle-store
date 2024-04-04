@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+}
+
+header{
+    position: fixed; /*o cabeçalho vai ficar fixo, mesmo quando a pagina for rolada*/
+    height: 95px;
+    width: 100%; /*cabeçalho vai ocupar toda a largura da janela do navegador*/
+    background-color: #2F2E2E; /* cor do fundo do cabeçalho*/
+    z-index: 1;
+}
+
+.container{
+    width: 100%;
+    padding: 1.5rem 3rem;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header .container nav ul {
+    display: flex;
+}
+
+header .container nav ul li {
+    margin-right: 40px; /* Adiciona um espaçamento entre os itens */
+}
+
+header h2 > a > span:nth-child(1){
+    color:green;
+}
+
+header h2 > a > span:nth-child(2){
+    color: white;
+}
+
+header h2 > a > span:nth-child(3){
+    color: red;
+}
+
+header h2 > a > span:nth-child(4){
+    color: yellow;
+}
+
+header nav ul li a:hover{
+    color: gray;
+}
+
+header #btn-contact{
+    padding: .5rem 2rem;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    border: 2px solid gray;
+    border-radius: 999px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+header #btn-contact:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+    color: gray;
+    background-color: #fff;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.background-section1 {
+    background-image: url('/images/ferrari.jpg');
+    background-size: cover; /* Define o tamanho da imagem de fundo */
+    background-position: bottom; /* Define a posição da imagem de fundo */
+}
+
+#home-title {
+    color: white;
+    font-size: 75px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#home-subtitle {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 15px;
+    text-align: center;
+}
+
+.background-section2 {
+    background-color: #D3D3D3;
+}
+
+.div-we {
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+#we-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 15px 0px 10px 0px;
+}
+
+.div-we > p {
+    text-align: center;
+    font-size: 18px;
+    margin: 0px 80px 0px 80px;
+}
+
+.separator {
+    margin: 10px 0px 25px 325px;
+    border: 3px solid black;
+    width: 50px;
+
+}
+
+.background-section3 {
+    display: flex;
+    flex-direction: column;
+    background-color:	#4F4F4F;
+    background-size: cover; 
+    background-position: center;
+}
+
+section:nth-child(3) > div:nth-child(1) {
+    width: 1280px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: white;
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.box{
+    width: 400px;
+    height: 550px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.box h2 {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+
+}
+
+.box p{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin: 10px 5px 5px 5px;
+
+}
+
+.box img {
+    width: 300px;
+    margin: 20px;
+    border-radius: 5px
+    
+}
+
+.more-button {
+    padding: 12px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+    width: 75%;
+    height: 50px;
+    color: white;
+    background-color: 	#00BFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 99px;
+}
+
+.more-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.more-button:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+    color: #00BFFF;
+    background-color: #fff;
+}
+
+.background-section4{
+    background-color: #DCDCDC;
+}
+
+.box-contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 550px;
+    height: 600px;
+    
+
+}   
+
+.box-contact-container div:nth-child(1) {
+    justify-content: center;
+    top: 100px;
+    width: 500px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.box-contact-container div:nth-child(1) p {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.box-contact-container div:nth-child(1) > span {
+    display: inline-block;
+    border: 2px solid black;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 190px;
+
+}
+
+.box-contact {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 450px;
+    height: 390px;
+    margin-bottom: 10px;
+
+}
+
+.box-contact > p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.footer {
+    margin-top: auto;
+    margin-left: 130px;
+    padding: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+    margin: 5px;
+}
+
+.fa-instagram, .fa-whatsapp, .fa-facebook{
+    font-size: 35px;
+}
