@@ -1,56 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
 
-*{
+*{ /*aplica em todos os elementos*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body, html{
+body, html{ /*aplica um estilo especifico no body e html*/
     width: 100%;
     scroll-behavior: smooth;
     font-family: "Lato", sans-serif;
     letter-spacing: 1px;
 }
 
-header{
+header{ /*aplica um estilo ao cabeçalho*/
     position: fixed; /*o cabeçalho vai ficar fixo, mesmo quando a pagina for rolada*/
     height: 95px;
     width: 100%; /*cabeçalho vai ocupar toda a largura da janela do navegador*/
     background-color: #2F2E2E; /* cor do fundo do cabeçalho*/
-    z-index: 1;
+    z-index: 1;/*faz com que o cabeçalho fique sobreposto aos outros elementos da pagina*/
 }
 
 .container{
     width: 100%;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 3rem;/*1.5rem define o preenchimento superior e inferior e 3rem p/ direita e esquerda*/
 }
 
-header > .container {
+header > .container { /*seleciona todos os elementos que possuem classe container e sao filhos de header*/
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header nav ul{
-    list-style: none;
+header nav ul{ /*seleciona todos os elementos ul que estao dentro de nav que estao dentro de header*/
+    list-style: none; /*remove os marcadores da lista */
 }
 
-header a{
+header a{ /*seleciona todos os elementos a que que estao dentro de header*/
     color: white;
-    text-decoration: none;
-    font-size: 20px;
+    text-decoration: none; /*remove o sublinhado do link*/
+    font-size: 20px; 
 }
 
-header .container nav ul {
-    display: flex;
+header .container nav ul { /*seleciona todos os elementos ul que estao dentro de nav que possuem a classe container que esta dentro de header*/
+    display: flex; /*define que todos os elementos ul terao um display flex(que permite que sejam organizados)*/
 }
 
 header .container nav ul li {
-    margin-right: 40px; /* Adiciona um espaçamento entre os itens */
+    margin-right: 40px; /* adiciona um espaçamento entre os itens */
 }
 
-header h2 > a > span:nth-child(1){
+header h2 > a > span:nth-child(1){ /*seleciona o primeiro span que é filho de a que é filho de h2 que esta dentro de header*/
     color:green;
 }
 
@@ -66,48 +66,46 @@ header h2 > a > span:nth-child(4){
     color: yellow;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover{ /*adiciona uma açao ao link <a>  */
     color: gray;
 }
 
-header #btn-contact{
+#btn-contact{ /*cria uma classe para o botao de contato*/
     padding: .5rem 2rem;
-    font-weight: bold;
+    font-weight: bold; 
     font-size: 18px;
     color: white;
     border: 2px solid gray;
     border-radius: 999px;
     background-color: gray;
-    cursor: pointer;
 }
 
-header #btn-contact:hover{
-    transition: all .2s ease-in-out;
-    transform: scale(1.05);
+#btn-contact:hover{ /*adiciona uma açao ao botao de contato*/
+    transition: all .2s ease-in-out; /**define uma transiçao para todas as propriedades que foram alteradas*/
+    transform: scale(1.05); /*quando o mouse passa por cima do botao de contato ele aumenta em 5% do tamanho original*/
     color: gray;
     background-color: #fff;
 }
 
 .flex {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /*alinha os elementos horizontalmente */
+    align-items: center; /*alinha os elementos verticalmente*/
 }
 
-section {
-    position: relative;
+section { /*aplica as propriedades as todas as sections do html*/
     width: 100%;
     height: 700px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 
 }
 
 .background-section1 {
-    background-image: url('/images/ferrari.jpg');
-    background-size: cover; /* Define o tamanho da imagem de fundo */
-    background-position: bottom; /* Define a posição da imagem de fundo */
+    background-image: url('/images/ferrari.jpg'); /*adiciona a imagem como fundo da section*/
+    background-size: cover; /*define que a imagem cubra completamente o elemento */
+    background-position: bottom; /*define a posiçao da imagem dentro da section*/
 }
 
 #home-title {
@@ -125,14 +123,14 @@ section {
 }
 
 .background-section2 {
-    background-color: #D3D3D3;
+    background-color: #D3D3D3; 
 }
 
 .div-we {
     width: 700px;
     height: 400px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /*cria um sombreamento ao redor da div*/
     
 }
 
@@ -143,7 +141,7 @@ section {
     margin: 15px 0px 10px 0px;
 }
 
-.div-we > p {
+.div-we > p { /*para todos os paragrafos filhos da classe div-we*/
     text-align: center;
     font-size: 18px;
     margin: 0px 80px 0px 80px;
@@ -158,14 +156,12 @@ section {
 
 .background-section3 {
     display: flex;
-    flex-direction: column;
-    background-color:	#4F4F4F;
-    background-size: cover; 
-    background-position: center;
+    flex-direction: column; /*os elementos serao alinhados verticalmente um abaixo do outro*/
+    background-color:#4F4F4F;
 }
 
-section:nth-child(3) > div:nth-child(1) {
-    width: 1280px;
+section:nth-child(3) > div:nth-child(1) { /*para a primeira div filha da terceira section*/
+    width: 1280px; /*largura*/
     font-size: 40px;
     font-weight: bold;
     margin-top: 25px;
@@ -177,7 +173,7 @@ section:nth-child(3) > div:nth-child(1) {
 
 .content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*alinha os elementos filhos da classe horizontalmente um atras do outro*/
 
 }
 
@@ -187,13 +183,12 @@ section:nth-child(3) > div:nth-child(1) {
     margin: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: top;
     align-items: center;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
 }
 
-.box h2 {
+.box h2 { /*adiciona um estilo a todos os h2 dentro da classe box*/
     text-align: center;
     font-size: 25px;
     letter-spacing: 2px;
@@ -231,7 +226,7 @@ section:nth-child(3) > div:nth-child(1) {
 
 .more-button a {
     text-decoration: none;
-    color: inherit;
+    color: inherit; /*tira a cor padrao do link*/
 }
 
 .more-button:hover {
@@ -248,9 +243,7 @@ section:nth-child(3) > div:nth-child(1) {
 .box-contact-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    align-content: space-between;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 550px;
@@ -259,8 +252,7 @@ section:nth-child(3) > div:nth-child(1) {
 
 }   
 
-.box-contact-container div:nth-child(1) {
-    justify-content: center;
+.box-contact-container div:nth-child(1) { /*adiciona um estilo a primeira div filha da classe*/
     top: 100px;
     width: 500px;
     height: 50px;
@@ -312,6 +304,6 @@ section:nth-child(3) > div:nth-child(1) {
     margin: 5px;
 }
 
-.fa-instagram, .fa-whatsapp, .fa-facebook{
+.fa-instagram, .fa-whatsapp, .fa-facebook{ /*define o tamanho dos icones*/
     font-size: 35px;
 }
